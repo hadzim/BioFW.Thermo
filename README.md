@@ -3,6 +3,10 @@ BioFW.Thermo
 
 Thermal image recognition based on BioFW
 
+Project needs OpenCV 2.x and Poco C++ 1.4 libraries
+
+Uses features of std 0x11 standard --> compiler gcc > 4.8
+
 BioFW.Thermo.Eval.exe
 =====================
 evaluation tool for finding best thermal face classifier
