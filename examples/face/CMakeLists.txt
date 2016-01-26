@@ -5,10 +5,15 @@ file(GLOB_RECURSE BioFW.Example.Face.Sources "src/*.cpp")
 
 add_executable(${PROJECT_NAME} ${BioFW.Example.Face.Sources})
 
+
+find_package( OpenCV REQUIRED )
+
+
 target_link_libraries(${PROJECT_NAME}
 	BioFW.Core
 	BioFW.Standard
 	BioFW.OpenCV
+  ${OpenCV_LIBS}
 )
 
 INSTALL(TARGETS ${PROJECT_NAME}
